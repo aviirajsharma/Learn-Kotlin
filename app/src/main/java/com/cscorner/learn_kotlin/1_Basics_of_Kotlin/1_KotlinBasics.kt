@@ -100,10 +100,8 @@ Useful when you cannot initialize a variable immediately.
 // 4. Standard Input
 
 //fun main() {
-//
 //    var name = readln()
 //    println(name)
-//
 //
 //}
 
@@ -136,21 +134,20 @@ MutableMap<K, V> → Map with modification functions
 
 // Example :
 
-//fun main() {
-////    val fruits = mutableListOf("Apple", "Banana", "Cherry", "Apple","Orange", "Apple")
-////    println(fruits)  // Output: [Apple, Banana, Cherry, Apple]
-////    println(fruits[2])  // Output
-////    println(fruits.size)  //
+fun main() {
+    val fruits = mutableListOf("Apple", "Banana", "Cherry", "Apple","Orange" , "Papaya", "Apple")
+    println(fruits)  // Output: [Apple, Banana, Cherry, Papaya, Apple]
+    println(fruits[4])  // Output : Orange
+    println(fruits.size)  // 7
 
 
 
-//    val map = mutableMapOf("shivam" to 108, "vijay" to 501, "Three" to 3)
-//    map.remove("shivam")
-//     println(map)
-//
-
-
-//}
+    val map = mutableMapOf("Aviraj" to 58, "Shivam" to 501, "Three" to 3)
+    println(map)
+    map.remove("Shivam")
+     println(map)
+    print(map.get("Aviraj")) // 58
+}
 
 
 

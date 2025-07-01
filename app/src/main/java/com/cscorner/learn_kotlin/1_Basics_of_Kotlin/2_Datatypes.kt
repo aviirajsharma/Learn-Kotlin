@@ -3,7 +3,6 @@ package com.cscorner.learn_kotlin
 
 // 1.Numeric Data Types
 //fun main() {
-//
 //    val byteVal: Byte = 127   // 8-bit integer
 //    val shortVal: Short = 32000 // 16-bit integer
 //    val intVal: Int = 100000  // 32-bit integer
