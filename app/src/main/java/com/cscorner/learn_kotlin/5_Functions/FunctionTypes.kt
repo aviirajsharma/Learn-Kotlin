@@ -109,3 +109,67 @@ There is no fun keyword or function name like in regular functions.
 
 */
 
+//  9.HIGH ORDER FUNCTION
+//// A higher-order function that takes another function (operation) as a parameter
+
+
+
+
+fun operate(a: Int, b: Int, operation: (Int, Int) -> Int): Int {
+    return operation(a, b) // Calls the passed-in function with a and b
+}
+
+
+// A simple function that matches the required (Int, Int) -> Int type
+fun add(x: Int, y: Int): Int = x + y
+
+fun main() {
+    // Passing the 'add' function as a reference to the higher-order function
+    val result = operate(5, 3, ::add)
+    println(result) // Output: 8
+}
+
+
+
+
+
+//  10. Member Function (A function inside a class)
+
+//class Person(val name: String) {
+//    fun introduce() {   // this is called member function
+//        println("Hi, my name is $name")
+//    }
+//}
+//
+//fun main() {
+//    val p = Person("Aviraj")
+//    p.introduce() // Output: Hi, my name is Aviraj
+//}
+
+
+
+
+
+//  11. Overriding Function, (Used in inheritance when a subclass provides a specific implementation of a function.)
+
+
+//open class Animal {
+//    open fun makeSound() {
+//        println("Animal makes a sound")
+//    }
+//}
+//
+//class Dog : Animal() {
+//    override fun makeSound() {
+//        println("Dog barks") // this is called overriding function
+//    }
+//}
+//
+//fun main() {
+//    val myDog = Dog()
+//    myDog.makeSound() // Output: Dog barks
+//}
+
+
+
+
